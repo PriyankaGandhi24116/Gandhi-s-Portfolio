@@ -53,6 +53,68 @@ The portfolio combines a professional UI with **Three.js 3D animations, glassmor
 
 ---
 
+You're right — **`Contact page.png` was missing**. It should be included in both the **Project Structure** and **Portfolio Screenshots** sections.
+
+Also, I noticed one small formatting issue in your pasted version: you have ` ```` ` after the project structure instead of the correct closing ` ``` `. That can break everything that follows.
+
+Use this corrected version. The only screenshot addition needed is the **Contact Page**, and the Markdown structure is fixed:
+
+````markdown
+# 🚀 Priyanka Gandhi — Interactive 3D Portfolio
+
+A modern and interactive **3D personal portfolio website** showcasing my skills, projects, achievements, education, internship experience, and technical journey in **Power BI, MERN Stack, AI/ML, Web Development, and Creative Design**.
+
+The portfolio combines a professional UI with **Three.js 3D animations, glassmorphism, interactive project demonstrations, responsive design, dark/light mode, smooth scrolling, and modern animations**.
+
+---
+
+## 🌐 Portfolio
+
+- 🔗 **GitHub:** https://github.com/PriyankaGandhi24116
+- 💼 **LinkedIn:** https://www.linkedin.com/in/priyanka-gandhi-80abaa430/
+
+---
+
+# ✨ Features
+
+- 🌌 Interactive **Three.js 3D background**
+- 🎨 Modern **Glassmorphism UI**
+- 🌓 Dark / Light theme
+- 📱 Fully responsive design
+- ⌨️ Animated typewriter effect
+- 🎯 Interactive project filtering
+- 📊 Interactive dashboard demonstrations
+- 📈 Animated statistics and counters
+- 🖱️ 3D hover and tilt effects
+- 👩‍💻 Skills and technology showcase
+- 🏆 Achievements and honors section
+- 💼 Internship and experience section
+- 🎓 Education section
+- 📩 Contact section
+- ⚡ Smooth scrolling and animations
+- 📱 Responsive mobile navigation
+- 🔔 Interactive toast notifications
+- 💡 Quick Bio modal
+- 📊 Chart.js visualizations
+
+---
+
+# 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure |
+| CSS3 | Styling, animations and responsive design |
+| JavaScript | Interactivity and functionality |
+| Three.js | 3D background and visual effects |
+| Chart.js | Interactive charts |
+| Font Awesome | Icons |
+| Google Fonts | Typography |
+| Git | Version control |
+| GitHub | Repository hosting |
+
+---
+
 # 📂 Project Structure
 
 ```text
@@ -71,6 +133,7 @@ Gandhi-s-Portfolio/
 ├── Project page 2.png
 ├── Honor page.png
 ├── Experience page.png
+├── Contact page.png
 │
 └── README.md
 ````
@@ -175,6 +238,12 @@ Profile image used in the portfolio.
 
 ---
 
+## 📬 Contact Page
+
+<img src="./Contact%20page.png" alt="Contact Page" width="100%">
+
+---
+
 # 💼 Featured Projects
 
 ## 🤖 1. AI-Powered Customer Churn Prediction App
@@ -225,6 +294,7 @@ A Power BI dashboard designed to analyze HR data and provide meaningful insights
 * Business insights
 
 **Technologies:** Power BI, Data Analytics, Data Visualization
+
 ---
 
 ## 🚚 4. Supply Chain Dashboard
@@ -241,6 +311,7 @@ An interactive Power BI dashboard focused on analyzing supply chain performance,
 * Business performance analysis
 
 **Technologies:** Power BI, Data Analytics, Data Visualization
+
 ---
 
 ## 👗 5. Back Bencerz Style Emporium
@@ -536,3 +607,4 @@ I am continuously learning and exploring new technologies while working toward b
 <p align="center">
   © 2026 Priyanka Gandhi. All Rights Reserved.
 </p>
+```
