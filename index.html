@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Priyanka Gandhi - Microsoft Power BI Developer, Full Stack & MERN Stack Developer, AI Enthusiast, Content Creator & Social Advocate." />
+  <meta name="keywords" content="Priyanka Gandhi, Power BI Developer, Full Stack Developer, MERN Stack Developer, AI Enthusiast, Canva, Content Creation, Politics, Social Work, 3D Portfolio" />
+  <meta name="author" content="Priyanka Gandhi" />
+
+  <!-- Open Graph Meta Tags for LinkedIn & Social Sharing -->
+  <meta property="og:title" content="Priyanka Gandhi | Microsoft Power BI & MERN Stack Developer" />
+  <meta property="og:description" content="Microsoft Power BI Developer | Full Stack & MERN Stack Developer | AI Enthusiast | Content Creation | Social Work & Politics" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.linkedin.com/in/priyanka-gandhi-80abaa430/" />
+  <meta property="og:image" content="profile.jpg" />
+
+  <title>Priyanka Gandhi | Power BI & MERN Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome, Chart.js & Three.js CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Interactive Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-badge">&lt;/&gt;</span>
+        <span class="brand-name">PRIYANKA <span class="accent-text">GANDHI</span></span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house-user"></i> Home</a></li>
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+          <li><a href="#awards" class="nav-link"><i class="fa-solid fa-trophy"></i> Honors</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/priyanka-gandhi-80abaa430/" target="_blank" class="nav-social-btn" title="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/PriyankaGandhi24116" target="_blank" class="nav-social-btn" title="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Available for MERN Stack & Power BI Opportunities
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Priyanka Gandhi</span>
+        </h1>
+
+        <h2 class="hero-subtitle">
+          I build & design as a <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+        </h2>
+
+        <p class="hero-description">
+          Computer Science Student, <strong>Microsoft Power BI Developer</strong>, <strong>Full Stack & MERN Stack Developer</strong>, and <strong>AI Enthusiast</strong>. Passionate about <strong>Canva Content Creation</strong>, <strong>Social Work</strong>, and <strong>Politics</strong>.
+        </p>
+
+        <div class="hero-stats">
+          <div class="stat-card tilt-3d">
+            <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Major Projects</span>
+          </div>
+          <div class="stat-card tilt-3d">
+            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Honors</span>
+          </div>
+          <div class="stat-card tilt-3d">
+            <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Tech & Creative Tools</span>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="https://www.linkedin.com/in/priyanka-gandhi-80abaa430/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+          </a>
+          <a href="https://github.com/PriyankaGandhi24116" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
+          <button class="btn btn-outline" id="quick-resume-btn">
+            <i class="fa-solid fa-file-arrow-down"></i> Quick Bio
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card-wrapper">
+          <div class="glass-card profile-image-card tilt-3d">
+            <div class="profile-img-glow"></div>
+            <img src="profile.jpg" alt="Priyanka Gandhi - Profile Photo" class="profile-avatar" />
+            <div class="profile-badge">
+              <i class="fa-solid fa-bolt"></i> Power BI & MERN Stack
+            </div>
+          </div>
+
+          <div class="glass-card visual-card hero-code-snippet tilt-3d">
+            <div class="card-header-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="card-title-text">priyanka_profile.js</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="token-keyword">const</span> priyanka = {
+  name: <span class="token-string">"Priyanka Gandhi"</span>,
+  roles: [<span class="token-string">"Power BI Developer"</span>, <span class="token-string">"MERN Stack Dev"</span>, <span class="token-string">"AI Enthusiast"</span>],
+  tools: [<span class="token-string">"Power BI"</span>, <span class="token-string">"MongoDB"</span>, <span class="token-string">"Express"</span>, <span class="token-string">"React"</span>, <span class="token-string">"Node"</span>, <span class="token-string">"Canva"</span>],
+  passions: [<span class="token-string">"Social Work"</span>, <span class="token-string">"Politics"</span>, <span class="token-string">"Content Creation"</span>]
+};</code></pre>
+            </div>
+            <div class="visual-footer">
+              <div class="tech-pill-group">
+                <span class="pill"><i class="fa-brands fa-react"></i> MERN Stack</span>
+                <span class="pill"><i class="fa-solid fa-chart-pie"></i> Power BI</span>
+                <span class="pill"><i class="fa-solid fa-palette"></i> Canva</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Get To Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon"><i class="fa-solid fa-chart-pie"></i></div>
+          <h3>Microsoft Power BI & MERN Stack</h3>
+          <p>
+            Specialized in crafting executive <strong>Power BI dashboards</strong> and building full-scale web applications using the <strong>MERN Stack</strong> (MongoDB, Express.js, React.js, Node.js).
+          </p>
+        </div>
+
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>AI Enthusiast & Canva Creator</h3>
+          <p>
+            Passionate about harnessing cutting-edge <strong>AI tools</strong> for rapid prototyping, intelligent automation, and creating visually compelling graphics & media using <strong>Canva</strong>.
+          </p>
+        </div>
+
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon"><i class="fa-solid fa-hands-holding-child"></i></div>
+          <h3>Social Work, Politics & Content Creation</h3>
+          <p>
+            Deeply committed to <strong>social work</strong>, community development, political awareness, and impactful digital <strong>content creation</strong> to drive positive societal change.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Technical & Creative Stack</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Tools</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Skill Categories -->
+      <div class="skills-wrapper">
+        <div class="skill-category glass-card tilt-3d">
+          <h3 class="category-title"><i class="fa-solid fa-layer-group"></i> MERN Stack & Full Stack Dev</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fa-brands fa-react skill-icon" style="color: #61dafb;"></i>
+              <span class="skill-name">React.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-node-js skill-icon" style="color: #68a063;"></i>
+              <span class="skill-name">Node.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-server skill-icon" style="color: #828282;"></i>
+              <span class="skill-name">Express.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-database skill-icon" style="color: #47a248;"></i>
+              <span class="skill-name">MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-js skill-icon js-color"></i>
+              <span class="skill-name">JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-brands fa-html5 skill-icon" style="color: #e34f26;"></i>
+              <span class="skill-name">HTML5 / CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card tilt-3d">
+          <h3 class="category-title"><i class="fa-solid fa-chart-pie"></i> Power BI & AI Technologies</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fa-solid fa-chart-column skill-icon pbi-color"></i>
+              <span class="skill-name">Microsoft Power BI</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-calculator skill-icon" style="color: #f2c94c;"></i>
+              <span class="skill-name">DAX & Data Modeling</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-robot skill-icon ai-color"></i>
+              <span class="skill-name">AI Prompt Engineering</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-brain skill-icon" style="color: #bb86fc;"></i>
+              <span class="skill-name">ChatGPT & AI Prototyping</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-cube skill-icon" style="color: #00f2fe;"></i>
+              <span class="skill-name">Three.js 3D Web</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card tilt-3d">
+          <h3 class="category-title"><i class="fa-solid fa-palette"></i> Design, Social & Content Creation</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fa-solid fa-wand-magic-sparkles skill-icon" style="color: #00c4cc;"></i>
+              <span class="skill-name">Canva Graphic Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-photo-film skill-icon" style="color: #ff4757;"></i>
+              <span class="skill-name">Content Creation</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-hands-holding-circle skill-icon" style="color: #2ed573;"></i>
+              <span class="skill-name">Social Work</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-landmark skill-icon" style="color: #ffa502;"></i>
+              <span class="skill-name">Political Awareness</span>
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-bullhorn skill-icon" style="color: #1e90ff;"></i>
+              <span class="skill-name">Digital Campaigning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Portfolio Highlights</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="powerbi">Microsoft Power BI</button>
+        <button class="filter-btn" data-filter="ai-web">AI & Full Stack</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: AI Customer Churn -->
+        <div class="project-card glass-card tilt-3d" data-category="ai-web">
+          <div class="project-card-header">
+            <div class="project-icon-box cyan">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <span class="project-badge">AI & Python</span>
+          </div>
+
+          <h3 class="project-title">
+            AI-powered Customer Churn Prediction App
+          </h3>
+          <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 8px;"><i class="fa-regular fa-calendar"></i> Sep 2026 – Sep 2026</span>
+          <p class="project-description">
+            Developed an interactive Machine Learning application using Python to predict customer churn risk, calculate real-time AI model accuracy metrics, and provide actionable business retention recommendations.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">AI Intelligence</span>
+          </div>
+        </div>
+
+        <!-- Project 2: E-Commerce Analytics -->
+        <div class="project-card glass-card tilt-3d" data-category="powerbi">
+          <div class="project-card-header">
+            <div class="project-icon-box blue">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <span class="project-badge">Power BI</span>
+          </div>
+
+          <h3 class="project-title">
+            E-COMMERCE ANALYTICS DASHBOARD
+          </h3>
+          <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 8px;"><i class="fa-regular fa-calendar"></i> Sep 2026 – Sep 2026 | Associated with Arunai Engineering College</span>
+          <p class="project-description">
+            Developed a comprehensive Power BI dashboard analyzing total brands, pricing margins (MRP vs Sell Price), product size performance, and lead times across retail segments.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">DAX</span>
+            <span class="tag">Dashboard Building</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">E-Commerce</span>
+          </div>
+        </div>
+
+        <!-- Project 3: HR Analytical Dashboard -->
+        <div class="project-card glass-card tilt-3d" data-category="powerbi">
+          <div class="project-card-header">
+            <div class="project-icon-box purple">
+              <i class="fa-solid fa-users-viewfinder"></i>
+            </div>
+            <span class="project-badge">Power BI</span>
+          </div>
+
+          <h3 class="project-title">
+            <a href="https://github.com/PriyankaGandhi24116/HR-ANALYTICAL-DASHBOARD" target="_blank" rel="noopener noreferrer" class="project-title-link">
+              HR Analytical Dashboard <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+            </a>
+          </h3>
+          <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 8px;"><i class="fa-regular fa-calendar"></i> Jun 2026 – Jul 2026 | Associated with TVK Technologies</span>
+          <p class="project-description">
+            Enables HR teams to monitor workforce analytics, attrition rates by salary range and role, active employee retention KPIs, and daily salary distributions.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">Microsoft Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Workforce Analytics</span>
+          </div>
+
+          <div class="project-actions">
+            <div class="project-actions-group">
+              <button class="btn-project-demo" onclick="openDashboardModal('hr-analytics')">
+                <i class="fa-solid fa-chart-pie"></i> Interactive Demo
+              </button>
+              <a href="https://github.com/PriyankaGandhi24116/HR-ANALYTICAL-DASHBOARD" target="_blank" rel="noopener noreferrer" class="btn-project-github">
+                <i class="fa-brands fa-github"></i> GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Supply Chain Dashboard -->
+        <div class="project-card glass-card tilt-3d" data-category="powerbi">
+          <div class="project-card-header">
+            <div class="project-icon-box orange">
+              <i class="fa-solid fa-truck-ramp-box"></i>
+            </div>
+            <span class="project-badge">Power BI</span>
+          </div>
+
+          <h3 class="project-title">
+            <a href="https://github.com/PriyankaGandhi24116/SUPPLY-CHAIN-DASHBOARD" target="_blank" rel="noopener noreferrer" class="project-title-link">
+              Supply Chain Dashboard <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+            </a>
+          </h3>
+          <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 8px;"><i class="fa-regular fa-calendar"></i> Jun 2026 – Jul 2026 | Associated with TVK Technologies</span>
+          <p class="project-description">
+            An interactive Business Intelligence dashboard monitoring order lead times, supplier counts, stock availability ratios, defect rate breakdowns, and logistics shipping modes.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">DAX</span>
+            <span class="tag">Dashboard Building</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Supply Chain</span>
+          </div>
+
+          <div class="project-actions">
+            <div class="project-actions-group">
+              <button class="btn-project-demo" onclick="openDashboardModal('supply-chain')">
+                <i class="fa-solid fa-chart-column"></i> Interactive Demo
+              </button>
+              <a href="https://github.com/PriyankaGandhi24116/SUPPLY-CHAIN-DASHBOARD" target="_blank" rel="noopener noreferrer" class="btn-project-github">
+                <i class="fa-brands fa-github"></i> GitHub Repo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Back Bencerz Fashion -->
+        <div class="project-card glass-card tilt-3d" data-category="ai-web">
+          <div class="project-card-header">
+            <div class="project-icon-box blue">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <span class="project-badge">Full Stack & AI</span>
+          </div>
+
+          <h3 class="project-title">
+            <a href="https://bencerz-style-emporium.lovable.app/" target="_blank" rel="noopener noreferrer" class="project-title-link">
+              Back Bencerz Style Emporium | AI-Powered Fashion E-Commerce <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+            </a>
+          </h3>
+          <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 8px;"><i class="fa-solid fa-university"></i> Associated with Arunai Engineering College</span>
+          <p class="project-description">
+            Bencerz Style Emporium is a modern fashion e-commerce web platform optimized with AI Prompt Engineering and automated lead collection workflows.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">Full Stack Web</span>
+            <span class="tag">AI Tools</span>
+          </div>
+
+          <div class="project-actions">
+            <div class="project-actions-group">
+              <button class="btn-project-demo" onclick="openDashboardModal('men-wear')">
+                <i class="fa-solid fa-eye"></i> Quick Preview
+              </button>
+              <a href="https://bencerz-style-emporium.lovable.app/" target="_blank" rel="noopener noreferrer" class="btn-project-github" style="background: rgba(37, 99, 235, 0.1); border-color: rgba(37, 99, 235, 0.3); color: #60a5fa;">
+                <i class="fa-solid fa-globe"></i> Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Job Portal System -->
+        <div class="project-card glass-card tilt-3d" data-category="ai-web">
+          <div class="project-card-header">
+            <div class="project-icon-box green">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <span class="project-badge">Full Stack Web</span>
+          </div>
+
+          <h3 class="project-title">
+            Job Portal System
+          </h3>
+          <p class="project-description">
+            A responsive Job Portal System developed using HTML, CSS, JavaScript, and backend integration. Enables candidates to search active jobs, explore internships, and track applications across 850+ companies.
+          </p>
+
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Full Stack</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Preview Modal -->
+  <div class="modal-overlay" id="dashboard-modal">
+    <div class="modal-content glass-card">
+      <button class="modal-close" onclick="closeDashboardModal()">&times;</button>
+      
+      <div id="modal-body-container">
+        <!-- Content inserted dynamically via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Honors & Awards Section -->
+  <section class="section awards-section" id="awards">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Recognition & Achievements</span>
+        <h2 class="section-title">Honors & <span class="gradient-text">Awards</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Award 1 -->
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon" style="background: rgba(255, 165, 0, 0.15); color: #ffa502;"><i class="fa-solid fa-award"></i></div>
+          <h3>Best Performer</h3>
+          <h5 style="color: var(--text-secondary); margin-bottom: 6px;"><i class="fa-solid fa-certificate"></i> Issued by Skilltern · Jun 2025</h5>
+          <span style="font-size: 0.85rem; color: var(--accent-cyan); display: block; margin-bottom: 10px;"><i class="fa-solid fa-university"></i> Associated with Arunai Engineering College</span>
+          <p>
+            Recognized for outstanding performance and exceptional contribution in Full Stack Website Development, demonstrating strong technical skills, dedication, and consistent performance throughout the program.
+          </p>
+        </div>
+
+        <!-- Award 2 -->
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon" style="background: rgba(112, 0, 255, 0.15); color: #7000ff;"><i class="fa-solid fa-trophy"></i></div>
+          <h3>PPT Winner (1st Prize)</h3>
+          <h5 style="color: var(--text-secondary); margin-bottom: 6px;"><i class="fa-solid fa-building-columns"></i> Issued by SKP Engineering College · May 2025</h5>
+          <span style="font-size: 0.85rem; color: var(--accent-cyan); display: block; margin-bottom: 10px;"><i class="fa-solid fa-university"></i> Associated with Arunai Engineering College</span>
+          <p>
+            Presented a technical paper on <strong>"Recent Trends in Computing Technologies"</strong> and secured <strong>1st Prize</strong> among participants, strengthening skills in technical research, presentation, and communication.
+          </p>
+        </div>
+
+        <!-- Award 3 -->
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon" style="background: rgba(0, 242, 254, 0.15); color: #00f2fe;"><i class="fa-solid fa-palette"></i></div>
+          <h3>Poster Making (Canva) Winner</h3>
+          <h5 style="color: var(--text-secondary); margin-bottom: 6px;"><i class="fa-solid fa-university"></i> Issued by Arunai Engineering College · Mar 2024</h5>
+          <span style="font-size: 0.85rem; color: var(--accent-cyan); display: block; margin-bottom: 10px;"><i class="fa-solid fa-university"></i> Associated with Arunai Engineering College</span>
+          <p>
+            Secured <strong>1st Prize</strong> in Poster Making using Canva at <strong>CODE FEST 2024</strong>. Showcased creativity, innovation, and effective graphic communication in a competitive environment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section class="section experience-section" id="experience">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Journey & Qualification</span>
+        <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="experience-grid">
+        <!-- Work Experience Timeline -->
+        <div class="timeline-column glass-card">
+          <h3 class="column-title"><i class="fa-solid fa-briefcase"></i> Professional Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> June 2026 – July 2026</span>
+                <h4 class="timeline-title">Microsoft Power BI & Web Developer Intern</h4>
+                <h5 class="timeline-company"><i class="fa-solid fa-building"></i> TVK Technologies</h5>
+                <p class="timeline-desc">
+                  Designed interactive Power BI business analytics dashboards and contributed to full-stack MERN web integration for enterprise data visualization.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Intensive Specialization</span>
+                <h4 class="timeline-title">Full Stack MERN Web Development & Creative Design</h4>
+                <h5 class="timeline-company"><i class="fa-solid fa-award"></i> Anudip Foundation</h5>
+                <p class="timeline-desc">
+                  Mastered MongoDB, Express.js, React.js, and Node.js web architecture along with digital content creation, Canva graphic design, and UI component styling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="timeline-column glass-card">
+          <h3 class="column-title"><i class="fa-solid fa-graduation-cap"></i> Education & Academics</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> May 2023 – Jun 2027</span>
+                <h4 class="timeline-title">Bachelor of Engineering, Computer Science</h4>
+                <h5 class="timeline-company"><i class="fa-solid fa-university"></i> Arunai Engineering College</h5>
+                <div class="cgpa-badge">
+                  <i class="fa-solid fa-star"></i> Grade: <strong>7.8 CGPA</strong>
+                </div>
+                <p class="timeline-desc">
+                  <strong>Activities & Societies:</strong> Vice President | Event Hosting | Anchor | Public Speaking | Table Tennis | Throwball | Content Creation | Technical Events.<br/>
+                  Pursuing a degree in Computer Science with a strong interest in Full-Stack, MERN, and Power BI development.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Secondary School</span>
+                <h4 class="timeline-title">Higher Secondary Education</h4>
+                <h5 class="timeline-company"><i class="fa-solid fa-school"></i> E.V.Velu Girls Matriculation Higher Secondary School</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Licenses & Certifications Section -->
+  <section class="section certifications-section" id="certifications">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Verified Credentials</span>
+        <h2 class="section-title">Licenses & <span class="gradient-text">Certifications</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon" style="background: rgba(37, 99, 235, 0.15); color: #2563eb;"><i class="fa-solid fa-certificate"></i></div>
+          <h3>Prompt Engineering</h3>
+          <h5 style="color: var(--text-secondary); margin-bottom: 8px;"><i class="fa-solid fa-university"></i> SRM Institute of Science and Technology (SRMIST)</h5>
+          <p>Actively participated in an intensive Workshop on Prompt Engineering and Artificial Intelligence (AI).</p>
+        </div>
+
+        <div class="about-card glass-card tilt-3d">
+          <div class="about-icon" style="background: rgba(112, 0, 255, 0.15); color: #7000ff;"><i class="fa-solid fa-award"></i></div>
+          <h3>Full Stack Development</h3>
+          <h5 style="color: var(--text-secondary); margin-bottom: 8px;"><i class="fa-solid fa-award"></i> Skill Tern</h5>
+          <p>Issued Jan 2025 · Expired May 2025. Full Stack Developer specializing in MERN stack development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-badge">Let's Connect</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-details">
+              <h4>Location</h4>
+              <p>Thiruvannamalai, Tamil Nadu, India</p>
+            </div>
+          </div>
+
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="info-details">
+              <h4>Phone</h4>
+              <p><a href="tel:7904017617">+917904017617</a></p>
+            </div>
+          </div>
+
+          <div class="info-card glass-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-details">
+              <h4>Email</h4>
+              <p><a href="mailto:priyankagandhi24116@gmail.com">priyankagandhi24116@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-card glass-card tilt-3d">
+            <div class="info-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="info-details">
+              <h4>LinkedIn Profile</h4>
+              <p><a href="https://www.linkedin.com/in/priyanka-gandhi-80abaa430/" target="_blank" rel="noopener noreferrer">linkedin.com/in/priyanka-gandhi-80abaa430</a></p>
+            </div>
+          </div>
+
+          <div class="info-card glass-card tilt-3d">
+            <div class="info-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="info-details">
+              <h4>GitHub Profile</h4>
+              <p><a href="https://github.com/PriyankaGandhi24116" target="_blank" rel="noopener noreferrer">github.com/PriyankaGandhi24116</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <div class="contact-form-wrapper glass-card tilt-3d">
+          <h3>Send a Message</h3>
+          <p>Feel free to reach out for project proposals, data analyst roles, or full stack opportunities.</p>
+          
+          <form id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name"><i class="fa-solid fa-user"></i> Full Name</label>
+              <input type="text" id="name" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email"><i class="fa-solid fa-at"></i> Email Address</label>
+              <input type="email" id="email" placeholder="name@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+              <textarea id="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Bio / Resume Modal -->
+  <div class="modal-overlay" id="bio-modal">
+    <div class="modal-content glass-card bio-modal-content">
+      <button class="modal-close" onclick="closeBioModal()">&times;</button>
+      <div class="bio-modal-header">
+        <i class="fa-solid fa-address-card bio-header-icon"></i>
+        <div>
+          <h2>Priyanka Gandhi - Quick Profile Summary</h2>
+          <p>CS Engineering Student | Python & 3D Web Developer | Data Analyst | Full Stack Dev</p>
+        </div>
+      </div>
+
+      <div class="bio-modal-body">
+        <div class="bio-section">
+          <h4><i class="fa-solid fa-bullseye"></i> Career Objective</h4>
+          <p>To leverage Python development, 3D web technologies, data analytics, SQL, Power BI, and full stack software engineering skills in an innovative tech environment to build actionable tools and solve real-world problems.</p>
+        </div>
+
+        <div class="bio-section">
+          <h4><i class="fa-solid fa-check-double"></i> Core Competencies</h4>
+          <ul>
+            <li><strong>Python & Backend Development:</strong> Python Scripting, Automation, Data Modeling, API Integration.</li>
+            <li><strong>Interactive 3D & Web:</strong> Three.js, WebGL Graphics, JavaScript, Modern CSS3/HTML5.</li>
+            <li><strong>Data Analysis & Visualization:</strong> Power BI Dashboards, Data Modeling, DAX, Python Analytics.</li>
+            <li><strong>Computer Science:</strong> Data Structures & Algorithms, Problem Solving, Database Systems.</li>
+          </ul>
+        </div>
+
+        <div class="bio-section">
+          <h4><i class="fa-solid fa-contact-card"></i> Profiles & Contact</h4>
+          <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/priyanka-gandhi-80abaa430/" target="_blank">linkedin.com/in/priyanka-gandhi-80abaa430</a></p>
+          <p>💻 GitHub: <a href="https://github.com/PriyankaGandhi24116" target="_blank">github.com/PriyankaGandhi24116</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="brand-name">PRIYANKA <span class="accent-text">GANDHI</span></span>
+        <p>Computer Science Student | Python Developer | 3D Web Developer | Data Analyst</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/priyanka-gandhi-80abaa430/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/PriyankaGandhi24116" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
+
+      <p class="footer-copyright">
+        &copy; 2026 Priyanka Gandhi. All rights reserved. Built with Three.js & Modern Web Standards.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
