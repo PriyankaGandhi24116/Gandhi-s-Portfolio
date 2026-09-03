@@ -232,10 +232,6 @@ A Power BI dashboard designed to analyze HR data and provide meaningful insights
 * Business insights
 
 **Technologies:** Power BI, Data Analytics, Data Visualization
-
-🔗 **GitHub:**
-[https://github.com/PriyankaGandhi24116/HR-ANALYTICAL-DASHBOARD](https://github.com/PriyankaGandhi24116/HR-ANALYTICAL-DASHBOARD)
-
 ---
 
 ## 🚚 4. Supply Chain Dashboard
@@ -252,10 +248,6 @@ An interactive Power BI dashboard focused on analyzing supply chain performance,
 * Business performance analysis
 
 **Technologies:** Power BI, Data Analytics, Data Visualization
-
-🔗 **GitHub:**
-[https://github.com/PriyankaGandhi24116/SUPPLY-CHAIN-DASHBOARD](https://github.com/PriyankaGandhi24116/SUPPLY-CHAIN-DASHBOARD)
-
 ---
 
 ## 👗 5. Back Bencerz Style Emporium
